@@ -4,6 +4,7 @@ import Link from "next/link";
 function page() {
   return (
     <main>
+      
       <nav className={style.nav}>
         <div className="leftNav">
           <div className="logo"></div>
