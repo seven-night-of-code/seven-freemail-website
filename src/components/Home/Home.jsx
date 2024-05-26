@@ -1,8 +1,14 @@
 import React from 'react'
+import styles from './Home.module.css'
 
 function Home() {
   return (
-    <div>Home</div>
+    <div className={styles.container}>
+      <h1>Welcome to our community SevenFreeMail</h1>
+      
+    </div>
+
+    
   )
 }
 
