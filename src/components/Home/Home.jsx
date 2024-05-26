@@ -2,15 +2,14 @@
 
 
 import React from "react";
-import style from "./Home.module.css";
 import Link from "next/link";
 import Navbar from "../Navbar/Navbar";
 import Image from "next/image";
+import style from './Home.module.css'
 
 function Homes() {
   return (
     <>
-      <Navbar />
       <div className={style.container}>
         <div className={style.cords}>
           <Link href="" className={style.card}>
