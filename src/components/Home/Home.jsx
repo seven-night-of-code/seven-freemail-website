@@ -10,7 +10,6 @@ import Image from "next/image";
 function Home() {
   return (
     <>
-      <Navbar />
       <div className={style.container}>
         <div className={style.cords}>
           <Link href="" className={style.card}>
