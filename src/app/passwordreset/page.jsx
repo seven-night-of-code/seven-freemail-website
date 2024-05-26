@@ -2,7 +2,9 @@
 import React from "react";
 import style from "./page.module.css";
 import Link from "next/link";
+import { useRouter } from "next/navigation";
 function page() {
+  const navigate = useRouter();
   const handleSubmit = (e) => {
     e.preventDefault();
   };
@@ -22,7 +24,7 @@ function page() {
           <span>Confirm Password</span>
         </label>
 
-        <button class="submit">Reset password</button>
+        <button class="submit" onClick={()=>navigate.push("/signin")}>Reset password</button>
        
       </form>
     </section>

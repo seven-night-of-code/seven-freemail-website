@@ -10,26 +10,29 @@ function Page() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    navigate.push("/signin");
+    navigate.push("/passwordreset");
   };
 
   useEffect(() => {
-    const handleInput = (e) => {
-      if (e.target.value.length > 1) {
-        e.target.value = e.target.value.slice(0, 1);
+    const handleInput = (index, e) => {
+      if (e.target.value.length > 0 && index < inputRefs.current.length - 1) {
+        inputRefs.current[index + 1].focus();
       }
     };
 
-    inputRefs.current.forEach((inputElement) => {
+    inputRefs.current.forEach((inputElement, index) => {
       if (inputElement) {
-        inputElement.addEventListener("input", handleInput);
+        inputElement.addEventListener("input", handleInput.bind(null, index));
       }
     });
 
     return () => {
-      inputRefs.current.forEach((inputElement) => {
+      inputRefs.current.forEach((inputElement, index) => {
         if (inputElement) {
-          inputElement.removeEventListener("input", handleInput);
+          inputElement.removeEventListener(
+            "input",
+            handleInput.bind(null, index)
+          );
         }
       });
     };
@@ -52,6 +55,7 @@ function Page() {
                   type="number"
                   min={0}
                   max={9}
+                  maxLength={1}
                   className="inputCode"
                 />
               </label>

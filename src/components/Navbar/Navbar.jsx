@@ -3,9 +3,11 @@ import React from 'react'
 import styles from './Navbar.module.css'
 import Link from 'next/link';
 import Image from 'next/image';
+import { useRouter } from 'next/navigation';
 
 const Navbar = () => {
 
+  const navigate = useRouter();
   const links = [
     { name: '', href: '/' },
     { name: 'Login', href: '/LoginForm' },
@@ -18,8 +20,8 @@ const Navbar = () => {
       {/* <h1 style={{ color: 'black', marginLeft: 20 }}> 2factor</h1> */}
       <div className={styles.linksCon}>
         <input type="search" name="search" id="" placeholder='Search' />
-        <button className={styles.btn}>Login</button>
-        <button className={styles.Btn}>Sign Up</button>
+        <button className={styles.btn} onClick={()=>navigate.push("/signin")}>Login</button>
+        <button className={styles.Btn} onClick={()=>navigate.push("/signup")}>Sign Up</button>
               
       </div>
     </div>

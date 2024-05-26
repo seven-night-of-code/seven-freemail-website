@@ -1,15 +1,9 @@
 import React from 'react'
-import styles from './Home.module.css'
 
-function Home() {
+function Homes() {
   return (
-    <div className={styles.container}>
-      <h1>Welcome to our community SevenFreeMail</h1>
-      
-    </div>
-
-    
+    <div>Home</div>
   )
 }
 
-export default Home
+export default Homes

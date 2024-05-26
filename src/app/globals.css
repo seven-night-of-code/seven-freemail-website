@@ -7,15 +7,7 @@
   box-sizing: border-box;
   font-size: 14px;
   list-style: none;
-<<<<<<< HEAD
-}
-
-body {
-  background-color: black;
-
-}
-=======
-  font-family: "poppins";
+/* <<<<<<< HEAD */
 }
 .Btn {
   display: flex;
@@ -264,4 +256,4 @@ body {
 .inputCode:focus {
   background-color: #d3d5db;
 }
->>>>>>> 988c863a5ef5f8edb6a265223f29c7f8ec75993c
+/* >>>>>> 988c863a5ef5f8edb6a265223f29c7f8ec75993c */
