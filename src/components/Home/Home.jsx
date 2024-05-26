@@ -1,36 +1,144 @@
-import React, { useContext } from "react";
+import React from "react";
 import style from "./Home.module.css";
 import Link from "next/link";
 import Navbar from "../Navbar/Navbar";
 import Image from "next/image";
-import { details } from "@/app/details";
-import { productContext } from "../Context/Context";
 
 function Home() {
-
-  const [selectedP,setSelectedP] = useContext(productContext)
   return (
     <>
       <Navbar />
       <div className={style.container}>
         <div className={style.cords}>
-          {details.map((name) => (
-            <Link href="/Details" className={style.card} onClick={()=>setSelectedP(name)}>
-              <Image
-                className={style.img}
-                src={name.image}
-                width={280}
-                height={350}
-              />
-              <span className={style.info}>
-                <p className={style.text}>{name.name}</p>
-                <span className={style.links}>
-                  <p className={style.joe + " " + style.link}>{name.link}</p>
-                  <p className={style.joecolor}>{name.github}</p>
-                </span>
+          <Link href="" className={style.card}>
+            <Image className={style.img}
+              src="/image/bless.jpg"
+              width={280}
+              height={350} />
+            <span className={style.info}>
+              <p className={style.text}>bless</p>
+              <span className={style.links}>
+                <p className={style.joe + " " + style.link}> Link</p>
+                <p className={style.joecolor}>
+                  Git Hub
+                </p>
               </span>
-            </Link>
-          ))}
+            </span>
+          </Link>
+
+          <Link href="" className={style.card}>
+            <Image className={style.img}
+              src="/image/joe.jpg"
+              width={280}
+              height={350} />
+            <span className={style.info}>
+              <p className={style.joe}>joseph</p>
+              <span className={style.links}>
+                <p className={style.joe + " " + style.link}> Link</p>
+                <p className={style.joecolor}>
+                  Git Hub
+                </p>
+              </span>
+            </span>
+          </Link>
+          <Link href="" className={style.card}>
+            <Image className={style.img}
+              src="/image/astronote.jpg"
+              width={280}
+              height={350} />
+            <span className={style.info}>
+              <p className={style.text}>edward</p>
+              <span className={style.links}>
+                <p className={style.text + " " + style.link}> Link</p>
+                <p className={style.git}>
+                  Git Hub
+                </p>
+              </span>
+            </span>
+          </Link>
+          <Link href="" className={style.card}>
+            <Image
+              className={style.img}
+              src="/image/junior.jpg"
+              width={280}
+              height={350}
+          //      layout="fill"
+          // objectFit="cover"
+            />
+            <span className={style.info}>
+              <p className={style.text}>martin</p>
+              <span className={style.links}>
+                <p className={style.text + " " + style.link}> Link</p>
+                <p className={style.git}>
+                  Git Hub
+                </p>
+              </span>
+            </span>
+          </Link>
+          <Link href="" className={style.card}>
+            <Image className={style.img}
+              src="/image/astronote.jpg"
+              width={280}
+              height={350} />
+            <span className={style.info}>
+              <p className={style.text}>edward</p>
+              <span className={style.links}>
+                <p className={style.text + " " + style.link}> Link</p>
+                <p className={style.git}>
+                  Git Hub
+                </p>
+              </span>
+            </span>
+          </Link>
+          <Link href="" className={style.card}>
+           <Image className={style.img}
+              src="/image/joe.jpg"
+              width={280}
+              height={350} />
+            <span className={style.info}>
+              <p className={style.joe}>joseph</p>
+              <span className={style.links}>
+                <p className={style.joe + " " + style.link}> Link</p>
+                <p className={style.joecolor}>
+                  Git Hub
+                </p>
+              </span>
+            </span>
+          </Link>
+          <Link href="" className={style.card}>
+            <Image className={style.img}
+              src="/image/bless.jpg"
+              width={280}
+              height={350} />
+            <span className={style.info}>
+              <p className={style.text}>bless</p>
+              <span className={style.links}>
+                <p className={style.joe + " " + style.link}> Link</p>
+                <p  className={style.joecolor}>
+                  Git Hub
+                </p>
+              </span>
+            </span>
+          </Link>
+          <Link href="" className={style.card}>
+            <Image
+              className={style.img}
+              src="/image/junior.jpg"
+              width={280}
+              height={350}
+          //      layout="fill"
+          // objectFit="cover"
+            />
+            <span className={style.info}>
+              <p className={style.text}>martin</p>
+              <span className={style.links}>
+                <p className={style.text + " " + style.link}> Link</p>
+                <p className={style.git}>
+                  Git Hub
+                </p>
+              </span>
+            </span>
+          </Link>
         </div>
       </div>
     </>
