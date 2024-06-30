@@ -8,25 +8,26 @@
 
 .contentContainer {
     display: flex;
+    padding-left: 250px;
     width: 80%;
     flex-wrap: wrap;
 }
 
 .heading {
-    font-size: 37px;
+    font-size: 27px;
     margin-bottom: 20px;
     color: #fff;
 }
 
 .heading span {
-    color: #4CAF50;
-    font-size: 35px;
+    color: #47e6a6;
+    font-size: 27px;
 }
 
 .paragraph {
     display: flex;
-    font-size: 12px;
-    /* padding-top: 100px;/// */
+    font-size: 10px;
+    line-height: 12px;
     margin-bottom: 20px;
     color: #dacece;
 
@@ -40,13 +41,13 @@
 .searchButton {
     border-radius: 10px;
     background-color: #243A5A;
-    /* Green color */
     color: #9ba99c;
-    padding: 10px 20px;
+    padding-left: 10px;
+    padding-right: 7px;
     border: none;
     cursor: pointer;
     margin-right: 10px;
-    height: 37px;
+    height: 30px;
     border: 1.5px solid #959c95;
 
 }
@@ -54,26 +55,30 @@
 .technologyButton {
     border-radius: 10px;
     background-color: #243A5A;
-    color: #4CAF50;
-    padding: 10px 20px;
+    color: #47e6a6;
+    padding: 5px 10px 20px;
     border: none;
     cursor: pointer;
     margin-right: 10px;
     margin-bottom: 10px;
+    font-size: 10px;
+    height: 12px;
+    width: 55px;
+    font-weight: 700;
 }
 
 .technologyButton {
-    border: 1.5px solid #518d53;
-    /* background-color: #45a049; */
-    /* Slightly darker green on hover */
+    border: 1.5px solid #47e6a6;
 }
 
-.searchButton {
-    /* Style for the "+ Search more" button, if it differs from others */
-}
+.searchButton {}
 
 .profileImageContainer img {
-    height: 200px;
-    /* width: 50px; */
-    border-radius: 50%;
+    padding-right: 250px;
+    height: 270px;
+}
+
+.profileImageContainerx img {
+    padding-right: 219px;
+    height: 270px;
 }
