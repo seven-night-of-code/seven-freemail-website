@@ -1,0 +1,79 @@
+/* page.module.css */
+.section {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    background-color: #243A5A;
+}
+
+.contentContainer {
+    display: flex;
+    width: 80%;
+    flex-wrap: wrap;
+}
+
+.heading {
+    font-size: 37px;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+.heading span {
+    color: #4CAF50;
+    font-size: 35px;
+}
+
+.paragraph {
+    display: flex;
+    font-size: 12px;
+    /* padding-top: 100px;/// */
+    margin-bottom: 20px;
+    color: #dacece;
+
+}
+
+.technologyButtons {
+    display: flex;
+    width: 100%;
+}
+
+.searchButton {
+    border-radius: 10px;
+    background-color: #243A5A;
+    /* Green color */
+    color: #9ba99c;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    margin-right: 10px;
+    height: 37px;
+    border: 1.5px solid #959c95;
+
+}
+
+.technologyButton {
+    border-radius: 10px;
+    background-color: #243A5A;
+    color: #4CAF50;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+.technologyButton {
+    border: 1.5px solid #518d53;
+    /* background-color: #45a049; */
+    /* Slightly darker green on hover */
+}
+
+.searchButton {
+    /* Style for the "+ Search more" button, if it differs from others */
+}
+
+.profileImageContainer img {
+    height: 200px;
+    /* width: 50px; */
+    border-radius: 50%;
+}

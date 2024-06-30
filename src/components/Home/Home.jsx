@@ -1,14 +1,14 @@
 import React from 'react'
 import styles from './Home.module.css'
+import Page from './Home-2/page'
+// import styles from './page.module.css'
 
 function Home() {
   return (
-    <div className={styles.container}>
-      <h1>Welcome to our community SevenFreeMail</h1>
-      
-    </div>
-
-    
+   <>
+    {/* <h1>Hello</h1> */}
+    <Page/>
+   </>
   )
 }
 
