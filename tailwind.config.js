@@ -11,7 +11,10 @@ module.exports = {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic": "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
         "vector-green": "url('/Vector 2.png')",
-        "vector-aqua": "url('/Vector 1.png')"
+        "vector-aqua": "url('/Vector 1.png')",
+      },
+      boxShadow: {
+        'custom-green': '0px 4px 16px #2DF8BB',
       },
     },
   },

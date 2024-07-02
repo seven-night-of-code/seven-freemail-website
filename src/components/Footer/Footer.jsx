@@ -145,7 +145,7 @@ const Footer = () => {
           </div>
         </div>
 
-        <div className="mt-10 text-center border-t border-gray-700 pt-4">
+        <div className="mt-10 flex justify-between items-center border-t border-gray-700 pt-4 ">
           <p className="text-gray-400">&copy; All Copyright reserved 2022</p>
           <p className="text-gray-400 mt-2">Created By Krunal Modi</p>
         </div>
